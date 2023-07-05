@@ -6,5 +6,9 @@
     font-size: 13px;
     font-weight: 500;
     padding-left: 10px;
+    a {
+      color: $dark-color;
+      text-decoration: underline;
+    }
   }
 }
