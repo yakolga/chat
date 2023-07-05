@@ -1,0 +1,85 @@
+.promo {
+  display: flex;
+  justify-content: center;
+  padding-top: 55px;
+  color: $white-color;
+  background-image: url("/assets/img/bg.png");
+  background-size: cover;
+  position: relative;
+  height: 930px;
+  text-align: center;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__heading {
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+  }
+  &__subheading {
+    color: $white-color;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 6.25px;
+  }
+  &__question {
+    font-size: 26px;
+    font-weight: 500;
+  }
+  &__buttons {
+    display: flex;
+    margin-top: 28px;
+    flex-direction: row;
+  }
+  &__button {
+    &-active {
+      margin-right: 24px;
+    }
+  }
+  &__image {
+    margin-top: 40px;
+    position: absolute;
+    bottom: -46px;
+  }
+  @media (max-width: 768px) {
+    &__image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 489px) {
+    height: 825px;
+    &__heading {
+      font-size: 40px;
+    }
+    &__subheading {
+      font-size: 12px;
+    }
+    &__question {
+      font-size: 16px;
+    }
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: left;
+      justify-content: flex-start;
+    }
+    &__button {
+      &-active {
+        margin-right: 0;
+        margin-bottom: 14px;
+      }
+    }
+  }
+  @media (max-width: 425px) {
+    height: 737px;
+  }
+  @media (max-width: 375px) {
+    height: 663px;
+  }
+}
