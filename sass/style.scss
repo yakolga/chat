@@ -79,10 +79,15 @@ h2 {
   display: block;
 }
 
+#inputprice {
+  margin-right: 30px;
+}
+
 @import "blocks/promo";
 @import "blocks/about";
 @import "blocks/quote";
 @import "blocks/examples";
 @import "blocks/inner";
 @import "blocks/form";
+@import "blocks/author";
 @import "blocks/footer";
